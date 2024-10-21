@@ -1,0 +1,50 @@
+
+@import url(cursor.css);
+
+:root {
+  --bg-color:#141414;
+  --bg-color-two:#e0e0e0;
+  --txt-color :#f1f1f1;
+}
+::selection{
+  background-color:var(--bg-color);
+  color: var(--txt-color);
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family:  Helvetica, sans-serif;
+  color: var(--bg-color);
+  /* background-color: var(--bg-color); */
+}
+body{
+  height: 100vh;
+  display: flex;
+  background-color: var(--bg-color-two);
+  
+}
+.hero{
+  
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 3rem;
+  font-size: xx-large;
+  width: 30%;  
+}
+
+.location_part{
+  filter: grayscale(1);
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+#map { 
+  height: 400px; 
+  width: 600px;  
+}

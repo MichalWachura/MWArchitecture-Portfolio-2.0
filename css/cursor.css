@@ -1,0 +1,13 @@
+
+body{
+  cursor: none;
+}
+.cursor{
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+  background-color: red;
+  border-radius: 100%;
+  z-index: 1;
+}
