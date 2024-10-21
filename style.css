@@ -1,0 +1,275 @@
+
+
+@import url(./css/cursor.css);
+
+
+
+:root {
+  --bg-color:#141414;
+  --bg-color-two:#e0e0e0;
+  --txt-color :#f1f1f1;
+  --transition-color:#4d4949;
+}
+::selection{
+  background-color:var(--bg-color);
+  color: var(--bg-color-two);
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family:  Helvetica, sans-serif;
+  color: var(--bg-color);
+  background-color: var(--bg-color-two);
+  cursor: none;
+}
+a{
+  text-decoration: none;
+}
+.nav-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap:1rem;
+  margin: 0 6.5rem;
+  height: 15vh;
+  letter-spacing: 2px;
+  align-items: flex-start;  
+}
+#hero{
+  font-size: xx-large;
+  font-weight: 700;
+}
+#contact,#about{
+  font-weight: 600;
+  transition:  0.3s ease-in-out;
+}
+#contact:hover,#about:hover{
+  font-style: italic;
+  font-weight: 700;
+  color:var(--txt-color) ;
+  background-color: var(--bg-color);
+}
+.main-container{
+  display: flex;
+  justify-content: center;
+}
+.projects-container{
+  margin: 1rem ;
+  margin-bottom: 5rem;
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr;
+  align-self: center;
+  gap: 5rem;
+}
+.projects-container__tile{
+  position: relative;
+  transition: 0.3s ease-in-out;
+  }
+.projects-container__icon{
+  position: absolute;
+  z-index: 1;
+  width: 2rem;
+  margin-left: 93.7%;
+}
+.projects-container__tile:hover{
+  background-color:var(--bg-color);
+  font-style: italic;
+}
+.projects-container__tile:hover .projects-container__tile__text {
+  color: var(--txt-color);
+  
+}
+.projects-container__tile__image{
+  width: 32rem;
+  height: 18rem;
+  position: relative;
+}
+.projects-container__tile__text{
+  background-color: transparent;
+  color: var(--bg-color);
+  font-weight: 500;
+}
+
+footer{
+  background-color: var(--bg-color);
+  color: var(--txt-color);
+  display: flex;
+  height: 10vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.footer__button{
+  border: none;
+  color: var(--txt-color);
+  font-size: xx-large;
+  background-color: transparent;
+  transition: 0.2s ease-in-out;
+  cursor: none;
+}
+.footer__button:hover{
+  opacity: 0.3;
+  cursor: pointer;
+  cursor: none;
+}
+
+/* Media querries */
+@media (max-width: 480px) {
+  .nav-container {
+    margin: 0 1rem;
+    height: auto;
+    gap: 0.5rem;
+  }
+  
+  #hero {
+    font-size: large;
+  }
+  
+  #contact, #about {
+    font-size: small;
+  }
+  
+  .projects-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .projects-container__tile__image {
+    width: 100%;
+    height: auto;
+  }
+
+  .projects-container__icon {
+    width: 1.5rem;
+    margin-left: 85%;
+  }
+  
+  footer {
+    font-size: small;
+  }
+  
+  .footer__button {
+    font-size: large;
+  }
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .nav-container {
+    margin: 0 3rem;
+    height: auto;
+    gap: 0.75rem;
+  }
+
+  #hero {
+    font-size: x-large;
+  }
+
+  #contact, #about {
+    font-size: medium;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .projects-container__tile__image {
+    width: 24rem;
+    height: 14rem;
+  }
+
+  .projects-container__icon {
+    width: 1.75rem;
+    margin-left: 90%;
+  }
+
+  footer {
+    font-size: medium;
+  }
+
+  .footer__button {
+    font-size: x-large;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .nav-container {
+    margin: 0 5rem;
+    height: 10vh;
+    gap: 1rem;
+  }
+
+  #hero {
+    font-size: xx-large;
+  }
+
+  #contact, #about {
+    font-size: large;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .projects-container__tile__image {
+    width: 28rem;
+    height: 16rem;
+  }
+
+  .projects-container__icon {
+    width: 2rem;
+    margin-left: 93%;
+  }
+
+  footer {
+    font-size: large;
+  }
+
+  .footer__button {
+    font-size: xx-large;
+  }
+}
+@media (min-width: 1025px) {
+  .nav-container {
+    margin: 0 6.5rem;
+    height: 15vh;
+    gap: 1.25rem;
+  }
+
+  #hero {
+    font-size: xx-large;
+  }
+
+  #contact, #about {
+    font-size: large;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .projects-container__tile__image {
+    width: 32rem;
+    height: 18rem;
+  }
+
+  .projects-container__icon {
+    width: 2rem;
+    margin-left: 93.7%;
+  }
+
+  footer {
+    font-size: large;
+  }
+
+  .footer__button {
+    font-size: xx-large;
+  }
+}
