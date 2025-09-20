@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/mfw19.css">
+  <link rel="icon" type="image/x-icon" href="/favicon/favicon_mw.ico">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <title>MoodforWood Workshops 2019 </title>
+</head>
+
+<body>
+  <!-- MAIN RENDER -->
+  <section class="header">
+    <img class="header__icon" src="../img/Webpage_MoodForWood/MfW_icon.jpg" alt="">
+    <img src="/img/Webpage_MoodForWood/19/1_2019.jpg" class="header__main-render" alt="">
+    <!-- <button class="header__button">&#129137;</button> -->
+  </section>
+  <!-- DESCRIPTION AND MAP -->
+  <section class="description">
+    <div class="description__text">
+      <br>
+      <p class="description__text__paragraph">Typologie: <span class="text__paragraph__span">öffentlicher Raum
+        </span>
+      </p>
+      <br>
+      <hr>
+      <br>
+      <p class="section__txt__p__bullet">Universität: <span class="text__paragraph__span">Workshops</span> </p>
+      <br>
+      <hr>
+      <br>
+      <p class="section__txt__p__bullet">Land: <span class="text__paragraph__span">Polen</span></p>
+      <br>
+      <hr>
+      
+      <br>
+      <p class="section__txt__p__bullet">Tutors: <span class="text__paragraph__span">Hiroshi Kato,Pola Koch + Team</span></p>
+      <br>
+      <hr>
+      <br>
+      <p>
+        Im Rahmen des Projekts „Ratajski-Molche“ haben wir auf dem Gelände von Lech Siedlung einen einzigartigen Beobachtungs- und Bildungsraum geschaffen. Ziel war es, eine Struktur zu entwickeln, die es den Bewohnern ermöglicht, lokale Amphibienarten zu beobachten und die Umweltbildung der Bewohner zu unterstützen.
+        Das Gebiet beherbergt die größte Molchpopulation in Poznań. Als Reaktion auf die Bedürfnisse der Gemeinde und die Vorschläge der „Molchgruppe“ entwarfen wir eine Holzplattform auf einer Betonplattform neben dem Teich, der das Lebenszentrum der Molche ist. Auf der Plattform haben wir interaktive Säulen mit interessanten Fakten über den Lebenszyklus der Amphibien aufgestellt, die gedreht werden können, was die Kinder anspricht und ihnen die Ökologie näher bringt.
+        In Zusammenarbeit mit einem Herpetologen haben wir außerdem unter der Plattform einen sicheren Nistplatz aus natürlichen Materialien geschaffen. 
+      </p>
+      <br>
+    </div>
+    <div class="description__map">
+      <div id="map"></div>
+    </div>
+  </section>
+  <!-- DRAWINGS -->
+  <section class="drawings">
+
+    <div class="drawings_container">
+      <img class="drawings_container_img" src="../img/Webpage_MoodForWood/19/230116_Zeichnungen_MfW_19.jpg" id="mfw19_drawings">
+      <p class="drawings_container_txt">Drawings</p>
+    </div>
+
+    
+    <div class="drawings_container">
+      <img class="drawings_container_img" src="../img/Webpage_MoodForWood/19/2211221_AXO_MfW19.jpg" id="mfw19_axo">
+      <p class="drawings_container_txt">axo</p>
+    </div>
+
+
+
+  </section>
+  <!-- RENDERINGS SLIDER -->
+  <section class="renderings">
+    <div class="slider__arrow">
+      <button class="slider__arrow--left">↟</button>
+    </div>
+    <div class="  slider">
+      <div class="slider__slide"><img class="slide__img" src="../img/Webpage_MoodForWood/19/1_2019.jpg"
+          alt="foto_mfw19_1"></div>
+      <div class="slider__slide"><img class="slide__img" src="../img/Webpage_MoodForWood/19/2_2019.jpg"
+          alt="render_marina_1"></div>
+      <div class="slider__slide"><img class="slide__img" src="../img/Webpage_MoodForWood/19/3_2019.jpg"
+          alt="foto_mfw19_2"></div>
+      <div class="slider__slide"><img class="slide__img" src="../img/Webpage_MoodForWood/19/4_2019.jpg"
+          alt="foto_mfw19_3"></div>
+      <div class="slider__slide"><img class="slide__img" src="../img/Webpage_MoodForWood/19/5_2019.jpg"
+          alt="foto_mfw19_4"></div>
+      <div class="slider__slide"><img class="slide__img" src="../img/Webpage_MoodForWood/19/6_2019.jpg"
+          alt="foto_mfw19_5"></div>
+      <div class="slider__slide"><img class="slide__img" src="../img/Webpage_MoodForWood/19/7_2019.jpg"
+          alt="foto_mfw19_6"></div>
+      <div class="slider__slide"><img class="slide__img" src="../img/Webpage_MoodForWood/19/8_2019.jpg"
+          alt="foto_mfw19_7"></div>
+      <div class="slider__slide "><img class="slide__img" src="../img/Webpage_MoodForWood/19/9_2019.jpg"
+          alt="foto_mfw19_8"></div>
+    </div>
+    <div class="slider__arrow">
+      <button class="slider__arrow--right">↟</button>
+    </div>
+  </section>
+  <section class="model-viewer">
+    <!--  
+    <iframe title="Speckle"
+      src="https://app.speckle.systems/projects/3013cf6671/models/1b4968286a#embed=%7B%22isEnabled%22%3Atrue%2C%22isTransparent%22%3Atrue%2C%22hideControls%22%3Atrue%2C%22hideSelectionInfo%22%3Atrue%7D"
+      frameborder="0"></iframe>
+  -->
+  </section>
+  <footer>
+    <button class="footer__button">↟</button>
+  </footer>
+</body>
+<div class="cursor"></div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="/js/cursor.js"></script>
+<script src="/js/map_mfw19.js"></script>
+<script src="/js/scroll_projects.js"></script>
+<script src="/js/slider.js"></script>
+
+</html>
